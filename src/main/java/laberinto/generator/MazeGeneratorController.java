@@ -3,7 +3,7 @@ package laberinto.generator;
 import laberinto.generator.beans.CityMap;
 import laberinto.generator.beans.EllersMaze;
 import laberinto.generator.beans.Maze;
-import laberinto.generator.beans.RecurisveBacktrackMaze;
+import laberinto.generator.beans.RecursiveBacktrackMaze;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -31,7 +31,7 @@ public class MazeGeneratorController {
     @RequestMapping("/recursive-backtracking/generate")
     public Maze generateMazeUsingRecursiveBackTracking() {
         System.out.println("generating a beans using recursive back tracking..");
-        Maze maze = new RecurisveBacktrackMaze();
+        Maze maze = new RecursiveBacktrackMaze();
         maze.generate();
         return maze;
     }

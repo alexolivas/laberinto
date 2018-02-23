@@ -2,9 +2,9 @@ package laberinto.generator.beans;
 
 import laberinto.generator.beans.algorithms.RecursiveBackTracking;
 
-public class RecurisveBacktrackMaze extends Maze {
+public class RecursiveBacktrackMaze extends Maze {
 
-    public RecurisveBacktrackMaze() {
+    public RecursiveBacktrackMaze() {
         this.setAlgorithm(new RecursiveBackTracking());
     }
 }
