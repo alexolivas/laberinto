@@ -26,6 +26,14 @@ class Cell {
         this.type = type;
     }
 
+    Type getType() {
+        return type;
+    }
+
+    Status getStatus() {
+        return status;
+    }
+
     int getValue() {
         return this.type.getValue();
     }

@@ -33,6 +33,8 @@ public class MazeGeneratorController {
     @RequestMapping("/recursive-backtracking/generate")
     public Maze generateMazeUsingRecursiveBackTracking(
             @RequestParam(value="dimension", defaultValue="20") int dimension) {
+
+        // TODO: Set a hard dimension limit of 30 (or 40?)
         System.out.println("generating a beans using recursive back tracking..");
         Maze maze = new RecursiveBacktrackMaze();
         maze.generate(10);
